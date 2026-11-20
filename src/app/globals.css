@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; }
+  body {
+    background-color: #F4F0FF;
+    background-image:
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(255, 126, 182, 0.14), transparent 70%),
+      radial-gradient(ellipse 50% 40% at 0% 100%, rgba(91, 155, 255, 0.14), transparent 70%);
+    background-attachment: fixed;
+  }
+  :focus-visible { outline: 3px solid #5F3CE0; outline-offset: 3px; border-radius: 0.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bob { animation: none; }
+}
